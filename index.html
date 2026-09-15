@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>organizador de rotinas estudos do kaio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Elementos de Ilusão 3D de Fundo -->
+  <div class="bg-3d-cube cube-1"></div>
+  <div class="bg-3d-cube cube-2"></div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>organizador de rotinas estudos do kaio</h1>
+    <p>Identifique os principais gargalos e insatisfações do seu dia a dia acadêmico e veja soluções práticas.</p>
+  </header>
+
+  <!-- Lista de Cards -->
+  <main class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="card" onclick="openModal('modal-procrastinacao')">
+      <div>
+        <div class="card-icon">📱</div>
+        <h3>Procrastinação & Celular</h3>
+        <p>A tentação constante de redes sociais e o adiamento contínuo do início das sessões de estudo.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="openModal('modal-sobrecarga')">
+      <div>
+        <div class="card-icon">📚</div>
+        <h3>Acúmulo de Conteúdo</h3>
+        <p>Sensação sufocante de matérias e trabalhos acumulados próximo das datas de entregas e exames.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="openModal('modal-foco')">
+      <div>
+        <div class="card-icon">🧠</div>
+        <h3>Falta de Foco e Dificuldade</h3>
+        <p>Ler o mesmo texto várias vezes sem absorção real por causa do cansaço mental ou distrações externas.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" onclick="openModal('modal-rotina')">
+      <div>
+        <div class="card-icon">⏳</div>
+        <h3>Desorganização do Tempo</h3>
+        <p>Não saber por qual matéria começar e terminar o dia com a sensação de que não produziu nada.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" onclick="openModal('modal-desanimo')">
+      <div>
+        <div class="card-icon">🔋</div>
+        <h3>Esgotamento e Desânimo</h3>
+        <p>A insatisfação gerada pelo cansaço excessivo e falta de rotina de descanso estruturada.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" onclick="openModal('modal-metodos')">
+      <div>
+        <div class="card-icon">🎯</div>
+        <h3>Estudo Passivo Sem Retenção</h3>
+        <p>Gastar horas grifando livros e relendo anotações sem realmente fixar o conhecimento na memória.</p>
+      </div>
+      <span class="card-btn">Ver análise e solução &rarr;</span>
+    </div>
+
+  </main>
+
+  <!-- MODAIS DE DETALHES -->
+
+  <!-- Modal 1 -->
+  <div class="modal-overlay" id="modal-procrastinacao">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-procrastinacao')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">📱</span>
+        <h2>Procrastinação & Celular</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Perder horas em redes sociais e sentir um enorme sentimento de culpa antes mesmo de abrir os cadernos.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Sessões de Foco Dinâmicas:</strong> Bloqueador de distração com contagem regressiva visual.</li>
+          <li><strong>Regra dos 2 Minutos:</strong> Módulos para começar tarefas pequenas imediatamente sem resistência.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal-overlay" id="modal-sobrecarga">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-sobrecarga')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">📚</span>
+        <h2>Acúmulo de Conteúdo</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Deixar a matéria acumular e precisar virar noites estudando sob extremo estresse na véspera da prova.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Fracionamento de Tarefas:</strong> Divisão de grandes disciplinas em micro-metas diárias.</li>
+          <li><strong>Visão Geral de Prazos:</strong> Calendário 3D interativo com contagem de urgência.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal-overlay" id="modal-foco">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-foco')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">🧠</span>
+        <h2>Falta de Foco e Dificuldade</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Distrair-se facilmente com pequenos barulhos ou pensamentos paralelos, atrasando todas as atividades.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Timer Pomodoro 3D:</strong> Ciclos de 25min com descansos calculados para manter a mente fresca.</li>
+          <li><strong>Som Ambiente Integrado:</strong> Ruído branco e áudios binaurais para manter o estado de fluxo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal-overlay" id="modal-rotina">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-rotina')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">⏳</span>
+        <h2>Desorganização do Tempo</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Falta de clareza do que precisa ser feito primeiro, resultando em perda de tempo com indecisão.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Matriz de Prioridade:</strong> Organização automática de matérias urgentes x importantes.</li>
+          <li><strong>Quadro de Rotina Semanal:</strong> Programação diária simplificada e direta.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal-overlay" id="modal-desanimo">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-desanimo')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">🔋</span>
+        <h2>Esgotamento e Desânimo</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Sensação constante de exaustão mental que destrói a motivação para manter uma rotina saudável.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Ajuste por Energia:</strong> Reorganização automática de tarefas conforme sua disposição diária.</li>
+          <li><strong>Rastreio de Hábitos:</strong> Métricas de sono, pausa e bem-estar.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal-overlay" id="modal-metodos">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal-metodos')">&times;</button>
+      <div class="modal-header">
+        <span style="font-size: 2.2rem;">🎯</span>
+        <h2>Estudo Passivo Sem Retenção</h2>
+      </div>
+      <div class="modal-section">
+        <h4>Insatisfação no dia a dia</h4>
+        <p>Estudar várias horas, mas ter a sensação de "branco" na hora das provas ou exercícios.</p>
+      </div>
+      <div class="modal-section">
+        <h4>Solução no Organizador do Kaio</h4>
+        <ul>
+          <li><strong>Flashcards com Repetição Espaçada:</strong> Algoritmo para revisão ativa no momento certo.</li>
+          <li><strong>Central de Quizzes:</strong> Autoavaliações periódicas para fixação do conteúdo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- LÓGICA JAVASCRIPT DOS MODAIS -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    // Fechar ao clicar fora do modal
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal-overlay')) {
+        event.target.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
